@@ -8,3 +8,6 @@ aws s3 cp DimCategory.csv s3://ecommerce-sales-data-dev/ecommerce_sales/raw_sale
 aws s3 cp DimDate.csv s3://ecommerce-sales-data-dev/ecommerce_sales/raw_sales_data/date/
 aws s3 cp DimCountry.csv s3://ecommerce-sales-data-dev/ecommerce_sales/raw_sales_data/country/
 aws s3 cp FactSales.csv s3://ecommerce-sales-data-dev/ecommerce_sales/raw_sales_data/sales/
+
+
+

@@ -1,4 +1,4 @@
-#to copy all csv files to same location
+#to copy all csv files to same location(optional)
 aws s3 cp . s3://ecommerce-sales-data-dev/ecommerce_sales/raw_sales_reference_data/ --recursive --exclude "*" --include "*.csv"
 
 

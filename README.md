@@ -8,10 +8,17 @@ For this project, I will use S3 buckets, Athena for SQL, Lambda to create a func
 
 I had to create roles to allow Athena, Lambda, and Glue interact with the data in the S3 bucket.
 
-Create and run a crawler on the raw data in the S3 bucket and create a database in AWS Glue to store the raw csv files. 
+Create and run a crawler on the raw data in the S3 bucket and create a database in AWS Glue to store the raw csv files.
+Another crawler was created to create a table for the cleaned transformed data. 
 
 An ETL job is run in Glue to automate the process when future data is added to the databases. 
+
+Joining the 4 tables was hard to do under glue jobs and therefore i relied on Athena SQL using JOIN to join the 4 tables into one for easy analysis. 
+This transformed table was then transformed to parquet using Spark. 
+
 Quicksight is used to create a dashboard to easily view the analysis made for the ecommerce shop. 
+
+
 
 Apache Spark is later used on the collected data for Machine Learning to predict expected sales in the future. 
 
